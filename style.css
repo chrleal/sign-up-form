@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+--button-link-color: #C6361C;
+}
 
 *{
     margin: 0;
@@ -9,6 +14,10 @@
 body{
     height: 100vh;
     background-color: rgb(248, 248, 248);
+}
+
+a{
+    text-decoration: none;
 }
 
 .fullContainer {
@@ -30,11 +39,10 @@ body{
     height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 .rightContainer{
-    flex: 2;
+    flex: 1.7;
     height:100%;
     display: flex;
     flex-direction: column;
@@ -46,7 +54,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 20px 80px 40px 50px;
+    padding: 20px 80px 40px 45px;
     gap: 15px;
     box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
     box-sizing: border-box;
@@ -75,15 +83,26 @@ body{
 }
 
 .textContainer p:first-child{
-    margin: 0px 80px 0px 50px;
+    margin: 0px 80px 0px 45px;
 }
 
 .textContainer p:last-child{
-    margin: 0px 80px 60px 50px;
+    margin: 0px 80px 60px 45px;
 }
 
 .bottomRight{
     flex: 1.5;
+}
+.bottomRight p{
+    margin: 20px 0 0 45px;
+    font-size: 1.1rem;
+}
+
+a:link, a:visited{
+    /* color:#727C57; */
+    /* color: #c40014; */
+    color: var(--button-link-color);
+    font-weight: 600;
 }
 
 .column1, .column2 {
@@ -104,6 +123,7 @@ input {
     height: 2rem;
     border-radius: 5px;
     border: 1px solid rgb(221, 221, 221);
+    padding-left: 5px;
 }
 
 label{
@@ -119,11 +139,12 @@ h1{
 }
 
 button {
-    margin: 40px 80px 0px 50px;
-    /* background-color: #C7371D; */
+    margin: 36px 80px 0px 45px;
+    /* background-color: #c40014; */
     /* background-color: #013220;
     background-color: #2D3C1F; */
-    background-color: #727C57;
+    /* background-color: #727C57; */
+    background-color: var(--button-link-color);
     padding: 15px 50px;
     font-size: 1.1rem;
     border-radius: 7px;
@@ -131,4 +152,34 @@ button {
     font-weight: 700;
     cursor: pointer;
     border: none;
+}
+
+.logo{
+    background-image: url(images/icon.svg);
+    width: 150px;
+    height:100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25px -10px;
+    filter: invert(99%) sepia(9%) saturate(382%) hue-rotate(280deg) brightness(117%) contrast(100%);
+}
+
+.logoContainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    bottom: 23.2%;
+    height: 14%;
+    padding-right: 50px;
+}
+
+.logoContainer p{
+    padding-top: 4px;
+    font-size: 40px;
+    font-family: 'Monoton', cursive, sans-serif;
+    color:#FFFFFF;
+    text-transform: uppercase;
 }
