@@ -34,7 +34,7 @@ a{
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -400px;
+    background-position: -150px;
     color: #f8f8f8;
     height: 100%;
     align-items: center;
@@ -82,7 +82,7 @@ a{
 }
 
 .textContainer p:first-child{
-    margin: 0px 80px 0px 45px;
+    margin: 30px 80px 0px 45px;
 }
 
 .textContainer p:last-child{
@@ -93,7 +93,7 @@ a{
     flex: 1.5;
 }
 .bottomRight p{
-    margin: 20px 0 0 45px;
+    margin: 20px 0 20px 45px;
     font-size: 1.1rem;
 }
 
