@@ -55,7 +55,6 @@ a{
     flex-direction: column;
     background-color: white;
     padding: 20px 80px 40px 45px;
-    gap: 15px;
     box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
     box-sizing: border-box;
     color: #212121;
@@ -122,8 +121,20 @@ input {
     max-width: 250px;
     height: 2rem;
     border-radius: 5px;
-    border: 1px solid rgb(221, 221, 221);
+    border: 1px solid #dddddd;
     padding-left: 5px;
+}
+
+input:not(:placeholder-shown){
+    border-color: var(--button-link-color);
+}
+
+input:valid {
+    border-color: #1c9ec6;
+}
+
+input:focus{
+    box-shadow: 5px 4px 20px -12px rgba(0,0,0,0.75);
 }
 
 label{
@@ -136,6 +147,7 @@ label{
 h1{
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 button {
@@ -182,4 +194,11 @@ button {
     font-family: 'Monoton', cursive, sans-serif;
     color:#FFFFFF;
     text-transform: uppercase;
+}
+
+.formContainer p{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 0px;
 }
